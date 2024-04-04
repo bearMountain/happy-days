@@ -34,13 +34,13 @@
 
 /* Responsive design for stacking columns on smaller screens */
 @media (max-width: 768px) {
-    .details-container {
+    .details-container, .container {
         flex-direction: column;
         align-items: center;
     }
 
-    .column, .column img, .fit-image {
-        width: 80%;
+    .column, .column img, .fit-image, .photo {
+        width: 100%; /* make photos take full width */
         margin-bottom: 20px;
     }
 }
