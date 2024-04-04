@@ -26,18 +26,21 @@
     text-align: center;
 }
 
-/* Add responsive design to stack columns on smaller screens */
+.column img, .fit-image {
+    max-width: 100%; /* Ensure the image doesn't grow larger than its container */
+    height: auto; /* Maintain the image's aspect ratio */
+    object-fit: contain; /* Ensures the aspect ratio is maintained and the image fits within the element's box */
+}
+
+/* Responsive design for stacking columns on smaller screens */
 @media (max-width: 768px) {
     .details-container {
         flex-direction: column;
         align-items: center;
     }
 
-    .column {
+    .column, .column img, .fit-image {
         width: 80%;
         margin-bottom: 20px;
     }
 }
-
-
-/* Add responsive design as necessary */
