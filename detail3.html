@@ -1,29 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detail Page</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Detail Page</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
 <body>
-    <div class="details-container">
-        <div class="column" id="fun">
+    <div class="container">
+        <div class="card" id="fun">
             <h2>Something Fun</h2>
-            <a href="https://youtu.be/Pl23TcdlDqM?si=i1eXNy6wbe0bbOwJ" target="_blank">
-                <img src="fail.png" alt="Chess Game Preview" class="fit-image">
+            <a href="" id="fun-link" target="_blank">
+                <div class="image-container">
+                    <img src="" alt="" id="fun-image" class="fit-image">
+                    <div class="play-button"></div>
+                </div>
             </a>
         </div>
-        <div class="column" id="encouragement">
+        <div class="card" id="encouragement">
             <h2>An Encouragement</h2>
-                <img src="mo2.png" alt="Chess Game Preview" class="fit-image">
-                <p>You have valuable, insighful opinions that are woth listening to. Honestly, it's one of the things that made me fall
-                    in love with you.</p>
+            <img src="" alt="" id="encouragement-image" class="fit-image">
+            <p id="encouragement-text"></p>
         </div>
-        <div class="column" id="love">
+        <div class="card" id="love">
             <h2>Love</h2>
-            <p>You're the love of my life bu. As far as I really remember, this is the only life I've had. I choose to spend it with you, I get to spend it with you. Thank you bb, I'm a lucky guy. You rock, I love you. -j</p>
+            <p id="love-text"></p>
         </div>
     </div>
+    <script src="runner.js" defer></script>
 </body>
 </html>
